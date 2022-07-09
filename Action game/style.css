@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+
+.gameContainer{
+    position: relative;
+    width:100vw;
+    height:100vh;
+    background-image: url(bg.png);
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.dino{
+    position:absolute;
+    bottom: 0;
+    left:15vw;
+}
+
+#img1{
+    width:18vw;
+}
+
+#img2{
+    width:13vw;
+}
+
+#obs{
+    position: absolute;
+    bottom:0;
+    left:65vw;
+}
+.obstacle{
+    animation: Obs 6s linear infinite;
+}
+
+@keyframes Obs{
+    0%{
+        left:100vw;
+    }
+    25%{
+        left:75vw;
+    }
+    50%{
+        left:50vw;
+    }
+    75%{
+        left:25vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
+
+
+.animateDino{
+    animation: Dino 0.7s linear;
+}
+
+@keyframes Dino{
+    0%{
+        bottom:0;
+    }
+    50%{
+        bottom: 25vw;
+    }
+    100%{
+        bottom:0;
+    }
+}
+
+.gameOver{
+    left:35vw;
+    position: absolute;
+    top: 15vh;
+    text-align: center;
+    margin:auto;
+    font-size:5vw;
+    font:bold;
+    width:30vw;
+    height:10vh;
+ 
+}
+
+#scoreCont{
+    left:5px;
+    position:absolute;
+    font-size: xx-large;
+    top:20px;
+}
+
+#highest{
+    left:5px;
+    position:absolute;
+    font-size: xx-large;
+    top:55px;
+}
+
+
